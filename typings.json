@@ -1,0 +1,7 @@
+{
+  "name": "screeps-typescript-sample-project",
+  "globalDependencies": {
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#efa0c1196d7280640e624ac1e7fa604502e7bd63",
+    "screeps-typescript-declarations": "github:screepers/Screeps-Typescript-Declarations/dist/screeps.d.ts#033861add6bf3184d2098407836a33063584a903"
+  }
+}

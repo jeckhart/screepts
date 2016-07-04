@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noResolve": false,
+    "noImplicitAny": false,
+    "diagnostics": true,
+    "listFiles": true
+  },
+  "exclude": [ "dist" ],
+
+  "filesGlob": [
+    "**/*.ts",
+    "**/*.tsx",
+    "!node_modules/**"
+  ],
+  "files": [
+    "./typings/index.d.ts",
+    "./src/boot/main.ts",
+    "./src/components/creeps/creep-action.ts",
+    "./src/components/creeps/creep-manager.ts",
+    "./src/components/creeps/harvester.ts",
+    "./src/components/rooms/room-manager.ts",
+    "./src/components/sources/source-manager.ts",
+    "./src/components/spawns/spawn-manager.ts",
+    "./src/config/config.ts",
+    "./src/shared/memory-manager.ts",
+    "./src/game-manager.ts"
+  ],
+
+  "bundles": {
+    "main": {
+      "files": [
+        "./src/boot/main.ts"
+      ],
+      "config": {
+        "declaration": true,
+        "outDir": "./bundles"
+      }
+    }
+  }
+}

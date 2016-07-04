@@ -1,0 +1,20 @@
+{
+  "name": "screeps-project",
+  "version": "0.0.1",
+  "description": "My code to control my screeps",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/typings install",
+    "start": "./node_modules/.bin/gulp watch"
+  },
+  "author": "John Eckhart <jweckhart@gmail.com>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "tsproject": "^1.2.1",
+    "typings": "^1.3.0",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+  }
+}
