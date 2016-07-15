@@ -33,10 +33,13 @@ export namespace CreepManager {
     export function createHarvester(): number | string {
         let bodyParts: string[] = [MOVE, MOVE, CARRY, WORK];
         let name: string = null;
+        let sources: any[] = SpawnManager.getFirstSpawn().room.find(FIND_SOURCES_ACTIVE)
+        let sourceIds: string[] = sources.map(i=>(<Source>i).id)
+        let dropoffIds: string[] = [SpawnManager.getFirstSpawn().id, SpawnManager.getFirstSpawn().room.controller.id]
         let properties: any = {
             role: 'harvester',
-            target_source_id: SourceManager.getFirstSource().id,
-            target_energy_dropoff_id: SpawnManager.getFirstSpawn().id,
+            target_source_ids: sourceIds,
+            target_energy_dropoff_ids: dropoffIds,
             renew_station_id: SpawnManager.getFirstSpawn().id
         };
 

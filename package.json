@@ -16,5 +16,6 @@
     "typescript": "^1.8.10"
   },
   "dependencies": {
+    "typestate": "^1.0.2"
   }
 }
